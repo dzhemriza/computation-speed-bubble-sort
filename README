@@ -1,0 +1,55 @@
+README
+
+Naive benchmark of the computational speed between different languages
+C++ (non optimized/optimized), C (non optimized/optimized), Java, Python
+
+Machine used:
+  macOS Sierra Version 10.12.2 (16C67)
+  Processor 2.9 GHz Intel Core i5
+  Memory 16 GB 1867 MHz DDR3
+
+-----------------------
+
+$ ./compile.sh
+cpp compile...
+cpp compile...done
+cpp compile optimized...
+cpp compile optimized...done
+java compile...
+java compile...done
+c compile...
+c compile...done
+c compile optimized...
+c compile optimized...done
+
+$ ./run-all.sh
+==== c ====
+
+real	0m36.453s
+user	0m34.437s
+sys	0m0.288s
+==== c optimized ====
+
+real	0m11.758s
+user	0m11.230s
+sys	0m0.053s
+==== cpp ====
+
+real	0m32.602s
+user	0m32.484s
+sys	0m0.045s
+==== cpp optimized ====
+
+real	0m11.042s
+user	0m11.017s
+sys	0m0.012s
+==== java ====
+
+real	0m9.945s
+user	0m9.856s
+sys	0m0.044s
+==== python ====
+
+real	27m0.819s
+user	26m43.893s
+sys	0m4.319s
